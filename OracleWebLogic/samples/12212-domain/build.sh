@@ -1,3 +1,4 @@
 #!/bin/sh
 
-docker build -t wls12212-ivc-informdomain .
+docker build -force-rm --no-cache= -t ivcinform/wls12212-ivc-informdomain .
+docker push ivcinform/wls12212-ivc-informdomain
