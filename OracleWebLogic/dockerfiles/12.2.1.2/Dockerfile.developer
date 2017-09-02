@@ -27,7 +27,7 @@
 # Pull base image
 # From the Oracle Registry
 # -------------------------
-FROM oracle/serverjre:8
+FROM ivcinform/serverjre:8
 
 # Maintainer
 # ----------
