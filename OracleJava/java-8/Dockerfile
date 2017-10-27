@@ -2,7 +2,7 @@
 #
 # Copyright (c) 2015 Oracle and/or its affiliates. All rights reserved.
 #
-FROM ubuntu:16.04
+FROM oraclelinux:7-slim
 
 MAINTAINER Bruno Borges <bruno.borges@oracle.com>
 
@@ -11,8 +11,7 @@ ENV JAVA_PKG=server-jre-8u*-linux-x64.tar.gz \
 
 ADD $JAVA_PKG /usr/java/
 
-RUN apt-get update && \
-    apt-get upgrade -y && \
+RUN yum update -y && \
     export JAVA_DIR=$(ls -1 -d /usr/java/*) && \
     ln -s $JAVA_DIR /usr/java/latest && \
     ln -s $JAVA_DIR /usr/java/default && \
