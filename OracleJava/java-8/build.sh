@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t oracle/serverjre:8 .
+docker build --no-cache --force-rm --tag ivcinform/jre:1.8.0.151-b12 .
