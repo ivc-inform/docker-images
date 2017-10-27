@@ -99,7 +99,7 @@ else
 fi
 
 # WebLogic Image Name
-IMAGE_NAME="oracle/weblogic:$VERSION-$DISTRIBUTION"
+IMAGE_NAME="ivcinform/weblogic:$VERSION-$DISTRIBUTION"
 
 # Go into version folder
 cd $VERSION
