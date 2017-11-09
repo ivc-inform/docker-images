@@ -81,7 +81,7 @@ elif [ $STANDARD -eq 1 ]; then
 fi
 
 # Oracle Database Image Name
-IMAGE_NAME="oracle/database:$VERSION-$EDITION-$PATCHLABEL"
+IMAGE_NAME="ivcinform/oracle-database:$VERSION-$EDITION-$PATCHLABEL"
 
 # Go into version folder
 cd $VERSION
